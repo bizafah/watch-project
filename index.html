@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHRONOS — Luxury Timepieces</title>
+  <meta name="description" content="CHRONOS — Curated luxury and sport timepieces. Premium craftsmanship, timeless design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announcement">
+    <div class="announcement__track">
+      <span>Complimentary shipping across Pakistan</span>
+      <span>•</span>
+      <span>2-year international warranty on every timepiece</span>
+      <span>•</span>
+      <span>Authorized dealer — 100% authentic</span>
+      <span>•</span>
+      <span>Complimentary shipping across Pakistan</span>
+      <span>•</span>
+      <span>2-year international warranty on every timepiece</span>
+      <span>•</span>
+      <span>Authorized dealer — 100% authentic</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <button class="icon-btn header__menu" id="menuToggle" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      </button>
+
+      <nav class="nav nav--left">
+        <a href="#collections" class="nav__link">Collections</a>
+        <a href="#watches" class="nav__link">Watches</a>
+        <a href="#craft" class="nav__link">Craftsmanship</a>
+      </nav>
+
+      <a href="#home" class="logo">
+        <span class="logo__text">CHRONOS</span>
+        <span class="logo__sub">MAISON HORLOGÈRE</span>
+      </a>
+
+      <nav class="nav nav--right">
+        <a href="#journal" class="nav__link">Journal</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <button class="icon-btn" id="searchToggle" aria-label="Search">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+        </button>
+        <button class="icon-btn" id="wishlistToggle" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="badge-count" id="wishlistCount">0</span>
+        </button>
+        <button class="icon-btn" id="cartToggle" aria-label="Cart">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="badge-count" id="cartCount">0</span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Search bar -->
+    <div class="search-panel" id="searchPanel">
+      <div class="search-panel__inner">
+        <input type="text" id="searchInput" placeholder="Search by name, brand, or category…" autocomplete="off" />
+        <button class="icon-btn" id="searchClose" aria-label="Close search">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="search-panel__results" id="searchResults"></div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <aside class="drawer drawer--left" id="mobileMenu">
+    <div class="drawer__head">
+      <span class="drawer__title">Menu</span>
+      <button class="icon-btn" id="menuClose" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      </button>
+    </div>
+    <nav class="drawer__nav">
+      <a href="#collections" class="drawer__link">Collections</a>
+      <a href="#watches" class="drawer__link">Watches</a>
+      <a href="#craft" class="drawer__link">Craftsmanship</a>
+      <a href="#journal" class="drawer__link">Journal</a>
+      <a href="#testimonials" class="drawer__link">Testimonials</a>
+      <a href="#contact" class="drawer__link">Contact</a>
+    </nav>
+    <div class="drawer__foot">
+      <p>CHRONOS Boutique</p>
+      <p>Karachi · Lahore · Islamabad</p>
+      <p>+92 21 111 247 666</p>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg"></div>
+    <div class="hero__content">
+      <span class="hero__eyebrow">The 2026 Collection</span>
+      <h1 class="hero__title">Time, <em>perfected.</em></h1>
+      <p class="hero__lead">A curated archive of horological mastery — from vintage-inspired dress watches to deep-sea chronographs. Each timepiece assembled by hand, certified for life.</p>
+      <div class="hero__cta">
+        <a href="#watches" class="btn btn--primary">Explore the Collection</a>
+        <a href="#craft" class="btn btn--ghost">Our Craft</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat"><span class="num">42</span><span class="lbl">Years of<br/>Mastery</span></div>
+        <div class="hero__stat"><span class="num">12k+</span><span class="lbl">Timepieces<br/>Delivered</span></div>
+        <div class="hero__stat"><span class="num">98%</span><span class="lbl">Client<br/>Satisfaction</span></div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee brands -->
+  <section class="brand-strip">
+    <div class="brand-strip__track">
+      <span>ROLEX</span><span>•</span>
+      <span>PATEK PHILIPPE</span><span>•</span>
+      <span>AUDEMARS PIGUET</span><span>•</span>
+      <span>OMEGA</span><span>•</span>
+      <span>JAEGER-LECOULTRE</span><span>•</span>
+      <span>IWC SCHAFFHAUSEN</span><span>•</span>
+      <span>ROLEX</span><span>•</span>
+      <span>PATEK PHILIPPE</span><span>•</span>
+      <span>AUDEMARS PIGUET</span><span>•</span>
+      <span>OMEGA</span><span>•</span>
+      <span>JAEGER-LECOULTRE</span><span>•</span>
+      <span>IWC SCHAFFHAUSEN</span><span>•</span>
+    </div>
+  </section>
+
+  <!-- COLLECTIONS -->
+  <section class="collections" id="collections">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Curated Collections</span>
+        <h2 class="section-title">Choose your chapter</h2>
+        <p class="section-lead">Four families of timepieces, each engineered for a distinct rhythm of life.</p>
+      </div>
+
+      <div class="collections__grid">
+        <a href="#watches" class="collection-card" data-filter="luxury">
+          <div class="collection-card__img" style="background-image:url('https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=800&q=80');"></div>
+          <div class="collection-card__body">
+            <span class="collection-card__tag">01 — Haute Horlogerie</span>
+            <h3>La Maison</h3>
+            <p>Skeleton tourbillons, perpetual calendars and minute repeaters in 18k gold.</p>
+            <span class="collection-card__link">Discover →</span>
+          </div>
+        </a>
+
+        <a href="#watches" class="collection-card" data-filter="sport">
+          <div class="collection-card__img" style="background-image:url('https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800&q=80');"></div>
+          <div class="collection-card__body">
+            <span class="collection-card__tag">02 — Performance</span>
+            <h3>Offshore</h3>
+            <p>Ceramic bezels, helium-escape valves and 1,000m water resistance.</p>
+            <span class="collection-card__link">Discover →</span>
+          </div>
+        </a>
+
+        <a href="#watches" class="collection-card" data-filter="classic">
+          <div class="collection-card__img" style="background-image:url('https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&q=80');"></div>
+          <div class="collection-card__body">
+            <span class="collection-card__tag">03 — Heritage</span>
+            <h3>Patrimoine</h3>
+            <p>Slim dress watches with Roman numerals and hand-applied indices.</p>
+            <span class="collection-card__link">Discover →</span>
+          </div>
+        </a>
+
+        <a href="#watches" class="collection-card" data-filter="smart">
+          <div class="collection-card__img" style="background-image:url('https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&q=80');"></div>
+          <div class="collection-card__body">
+            <span class="collection-card__tag">04 — Connected</span>
+            <h3>Nexus</h3>
+            <p>Hybrid smartwatches with sapphire touchscreens and titanium cases.</p>
+            <span class="collection-card__link">Discover →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCT -->
+  <section class="featured">
+    <div class="container featured__grid">
+      <div class="featured__media">
+        <div class="featured__img" style="background-image:url('https://images.unsplash.com/photo-1620625515032-6ed0c1790c75?w=900&q=80');"></div>
+        <div class="featured__badge">Limited Edition · 250 pieces worldwide</div>
+      </div>
+      <div class="featured__body">
+        <span class="eyebrow">Timepiece of the Month</span>
+        <h2 class="featured__title">Le Chronographe Émeraude</h2>
+        <p class="featured__desc">A 39mm white-gold case cradles a hand-guilloché emerald dial. The in-house Caliber CH-7 offers 72 hours of power reserve with a column-wheel chronograph beating at 28,800 vph.</p>
+        <ul class="featured__specs">
+          <li><span>Movement</span><b>Caliber CH-7 Automatic</b></li>
+          <li><span>Case</span><b>39mm 18k White Gold</b></li>
+          <li><span>Power Reserve</span><b>72 hours</b></li>
+          <li><span>Water Resistance</span><b>50 meters</b></li>
+          <li><span>Strap</span><b>Hand-stitched Alligator</b></li>
+        </ul>
+        <div class="featured__foot">
+          <div class="featured__price">
+            <span class="featured__price-label">From</span>
+            <span class="featured__price-value">PKR 8,450,000</span>
+          </div>
+          <button class="btn btn--primary" data-featured-add>Reserve Yours</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WATCH GRID -->
+  <section class="watches" id="watches">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">The Archive</span>
+        <h2 class="section-title">Every timepiece, on the wrist</h2>
+        <p class="section-lead">Filter by family, sort by price, and tap any watch for full specifications.</p>
+      </div>
+
+      <div class="filters">
+        <div class="filters__group" id="filterGroup">
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="luxury">La Maison</button>
+          <button class="filter-btn" data-filter="sport">Offshore</button>
+          <button class="filter-btn" data-filter="classic">Patrimoine</button>
+          <button class="filter-btn" data-filter="smart">Nexus</button>
+        </div>
+        <div class="filters__sort">
+          <select id="sortSelect" class="select">
+            <option value="featured">Sort: Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="name-asc">Name: A → Z</option>
+            <option value="name-desc">Name: Z → A</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="watches__grid" id="watchesGrid"></div>
+      <div class="watches__empty" id="watchesEmpty" hidden>
+        <p>No timepieces match your selection.</p>
+      </div>
+
+      <div class="watches__more">
+        <button class="btn btn--ghost" id="loadMore">Load more timepieces</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRAFTSMANSHIP -->
+  <section class="craft" id="craft">
+    <div class="container">
+      <div class="section-head section-head--light">
+        <span class="eyebrow">The Atelier</span>
+        <h2 class="section-title">Where steel becomes memory</h2>
+        <p class="section-lead">Each CHRONOS passes through 142 hands and 1,200 hours before it earns its serial number.</p>
+      </div>
+
+      <div class="craft__grid">
+        <div class="craft__step">
+          <span class="craft__num">01</span>
+          <h3>Hand-finishing</h3>
+          <p>Bezels are satin-brushed and polished by hand at alternating angles to catch light at every turn.</p>
+        </div>
+        <div class="craft__step">
+          <span class="craft__num">02</span>
+          <h3>Movement assembly</h3>
+          <p>Master watchmakers assemble calibers under microscopes, regulating each to ±2 seconds per day.</p>
+        </div>
+        <div class="craft__step">
+          <span class="craft__num">03</span>
+          <h3>Pressure testing</h3>
+          <p>Every case is submerged and pressurised to 1.25× its rated depth before certification.</p>
+        </div>
+        <div class="craft__step">
+          <span class="craft__num">04</span>
+          <h3>Lifetime servicing</h3>
+          <p>Owners receive complimentary servicing every 5 years for life, anywhere in the world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNAL -->
+  <section class="journal" id="journal">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Journal</span>
+        <h2 class="section-title">Notes from the workshop</h2>
+      </div>
+
+      <div class="journal__grid">
+        <article class="journal-card">
+          <div class="journal-card__img" style="background-image:url('https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800&q=80');"></div>
+          <div class="journal-card__body">
+            <span class="journal-card__date">11 Nov 2026 · 4 min read</span>
+            <h3>The quiet genius of the column-wheel chronograph</h3>
+            <p>Why the oldest chronograph mechanism remains the gold standard in 2026.</p>
+            <a href="#" class="journal-card__link">Read article →</a>
+          </div>
+        </article>
+        <article class="journal-card">
+          <div class="journal-card__img" style="background-image:url('https://images.unsplash.com/photo-1495856458515-0637185db551?w=800&q=80');"></div>
+          <div class="journal-card__body">
+            <span class="journal-card__date">28 Oct 2026 · 6 min read</span>
+            <h3>Caring for your mechanical watch in Karachi's climate</h3>
+            <p>Humidity, magnetism and dust — three things your timepiece fears most.</p>
+            <a href="#" class="journal-card__link">Read article →</a>
+          </div>
+        </article>
+        <article class="journal-card">
+          <div class="journal-card__img" style="background-image:url('https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800&q=80');"></div>
+          <div class="journal-card__body">
+            <span class="journal-card__date">14 Oct 2026 · 5 min read</span>
+            <h3>Inside the CH-7: a tour of our newest caliber</h3>
+            <p>A behind-the-scenes look at the 312-component movement powering Le Chronographe Émeraude.</p>
+            <a href="#" class="journal-card__link">Read article →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Collectors' Voices</span>
+        <h2 class="section-title">Worn with pride</h2>
+      </div>
+
+      <div class="testimonials__track" id="testimonialsTrack">
+        <div class="testimonial is-active">
+          <p class="testimonial__quote">"I have purchased from CHRONOS for over a decade. The Le Chronographe Émeraude is the first watch that has stopped me in my tracks since the Nautilus."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">AK</div>
+            <div>
+              <strong>Ahsan Khan</strong>
+              <span>Collector · Karachi</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial__quote">"The servicing programme alone justifies the price. Five years in and my Patrimoine runs ±1 second a day. Impeccable."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">SR</div>
+            <div>
+              <strong>Sana Raza</strong>
+              <span>Architect · Lahore</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial__quote">"The Offshore 1000 has accompanied me on three deep dives in the Maldives. Not a drop of water, not a scratch. Bulletproof."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">FM</div>
+            <div>
+              <strong>Faisal Malik</strong>
+              <span>Dive instructor · Islamabad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials__dots" id="testimonialDots">
+        <button class="dot is-active" data-index="0" aria-label="Testimonial 1"></button>
+        <button class="dot" data-index="1" aria-label="Testimonial 2"></button>
+        <button class="dot" data-index="2" aria-label="Testimonial 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container newsletter__inner">
+      <div class="newsletter__text">
+        <span class="eyebrow eyebrow--light">Inner Circle</span>
+        <h2>Receive new arrivals before they are public</h2>
+        <p>One letter a month. Private previews, boutique events, and notes from our master watchmakers.</p>
+      </div>
+      <form class="newsletter__form" id="newsletterForm" novalidate>
+        <input type="email" id="newsletterEmail" placeholder="Your email address" required />
+        <button type="submit" class="btn btn--primary">Subscribe</button>
+        <span class="newsletter__msg" id="newsletterMsg"></span>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="logo__text">CHRONOS</span>
+        <span class="logo__sub">MAISON HORLOGÈRE</span>
+        <p>Authorized dealer of luxury timepieces, established 1984. Karachi · Lahore · Islamabad.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-2C18.88 4 12 4 12 4s-6.88 0-8.59.42a2.78 2.78 0 0 0-1.95 2A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 2C5.12 20 12 20 12 20s6.88 0 8.59-.42a2.78 2.78 0 0 0 1.95-2A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Boutiques</h4>
+        <a href="#">Karachi — Dolmen Mall Clifton</a>
+        <a href="#">Lahore — Emporium Mall</a>
+        <a href="#">Islamabad — Centaurus Mall</a>
+        <a href="#">Book a private viewing</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Service</h4>
+        <a href="#">Lifetime servicing</a>
+        <a href="#">Warranty registration</a>
+        <a href="#">Authentication</a>
+        <a href="#">Trade-in programme</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Support</h4>
+        <a href="#">+92 21 111 247 666</a>
+        <a href="#">clientcare@chronos.pk</a>
+        <a href="#">WhatsApp concierge</a>
+        <a href="#">FAQ</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="#">About CHRONOS</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#">Privacy & Terms</a>
+      </div>
+    </div>
+
+    <div class="footer__bar">
+      <div class="container footer__bar-inner">
+        <span>© 2026 CHRONOS Maison Horlogère. All rights reserved.</span>
+        <span>Prices in PKR · Hand-assembled in Switzerland</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <aside class="drawer drawer--right" id="cartDrawer">
+    <div class="drawer__head">
+      <span class="drawer__title">Your Selection (<span id="cartDrawerCount">0</span>)</span>
+      <button class="icon-btn" id="cartClose" aria-label="Close cart">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="cart__items" id="cartItems">
+      <div class="cart__empty" id="cartEmpty">
+        <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+        <p>Your selection is empty.</p>
+        <span>Add a timepiece to begin your collection.</span>
+      </div>
+    </div>
+    <div class="cart__foot" id="cartFoot" hidden>
+      <div class="cart__row">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">PKR 0</span>
+      </div>
+      <div class="cart__row">
+        <span>Shipping</span>
+        <span>Complimentary</span>
+      </div>
+      <div class="cart__row cart__row--total">
+        <span>Total</span>
+        <span id="cartTotal">PKR 0</span>
+      </div>
+      <button class="btn btn--primary btn--block" id="checkoutBtn">Proceed to Checkout</button>
+      <button class="btn btn--ghost btn--block" id="clearCart">Empty selection</button>
+    </div>
+  </aside>
+
+  <!-- WISHLIST DRAWER -->
+  <aside class="drawer drawer--right" id="wishlistDrawer">
+    <div class="drawer__head">
+      <span class="drawer__title">Wishlist (<span id="wishlistDrawerCount">0</span>)</span>
+      <button class="icon-btn" id="wishlistClose" aria-label="Close wishlist">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="cart__items" id="wishlistItems">
+      <div class="cart__empty">
+        <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <p>No saved timepieces yet.</p>
+        <span>Tap the heart on any watch to save it here.</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- PRODUCT MODAL -->
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__panel" id="productModalPanel"></div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
