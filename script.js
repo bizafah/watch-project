@@ -1,5 +1,5 @@
 /* =========================================================
-   CHRONOS — Luxury Timepieces
+   Watch Project — Luxury Timepieces
    Full interactivity: cart, wishlist, filter, sort, search,
    modal, testimonials carousel, newsletter, scroll reveal
    ========================================================= */
@@ -22,7 +22,7 @@ const WATCHES = [
     images: [
       "https://images.unsplash.com/photo-1620625515032-6ed0c1790c75?w=900&q=80",
       "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=900&q=80",
-      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=900&q=80"
+      "https://images.unsplash.com/photo-1639037687665-37e0e07fee19?w=900&q=80"
     ],
     description: "A 39mm white-gold case cradles a hand-guilloché emerald dial. The in-house Caliber CH-7 offers 72 hours of power reserve with a column-wheel chronograph beating at 28,800 vph."
   },
@@ -39,7 +39,7 @@ const WATCHES = [
     water: "1,000 meters",
     strap: "Vulcanised Rubber",
     images: [
-      "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=900&q=80",
+      "https://images.unsplash.com/photo-1606293459339-aaa4dd55c5cb?w=900&q=80",
       "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=900&q=80",
       "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=900&q=80"
     ],
@@ -76,8 +76,8 @@ const WATCHES = [
     water: "100 meters",
     strap: "FKM Rubber / Leather",
     images: [
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=900&q=80",
-      "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=900&q=80",
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd001?w=900&q=80",
+      "https://images.unsplash.com/photo-1548171245-b0852bda6a7c?w=900&q=80",
       "https://images.unsplash.com/photo-1606189934846-a527add8a77b?w=900&q=80"
     ],
     description: "Mechanical heart, digital brain. The Nexus S2 pairs a self-winding caliber with a sapphire touchscreen overlay, GPS, and 14-day battery life."
@@ -95,7 +95,7 @@ const WATCHES = [
     water: "30 meters",
     strap: "Blue Alligator",
     images: [
-      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=900&q=80",
+      "https://images.unsplash.com/photo-1639037687665-37e0e07fee19?w=900&q=80",
       "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=900&q=80",
       "https://images.unsplash.com/photo-1620625515032-6ed0c1790c75?w=900&q=80"
     ],
@@ -133,7 +133,7 @@ const WATCHES = [
     strap: "Black Calfskin Racing",
     images: [
       "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=900&q=80",
-      "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=900&q=80",
+      "https://images.unsplash.com/photo-1606293459339-aaa4dd55c5cb?w=900&q=80",
       "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=900&q=80"
     ],
     description: "Inspired by 1970s endurance racing. Carbon-fibre bezel, tachymeter scale, and a high-frequency chronograph calibrated to 1/10th of a second."
@@ -151,8 +151,8 @@ const WATCHES = [
     water: "200 meters",
     strap: "Silicone Sport",
     images: [
-      "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=900&q=80",
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=900&q=80",
+      "https://images.unsplash.com/photo-1548171245-b0852bda6a7c?w=900&q=80",
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd001?w=900&q=80",
       "https://images.unsplash.com/photo-1606189934846-a527add8a77b?w=900&q=80"
     ],
     description: "Built for triathletes. 21-day solar-assisted battery, 200m water resistance, ECG, SpO₂, and full GPS tracking across 90+ activities."
@@ -170,7 +170,7 @@ const WATCHES = [
     strap: "Black Alligator",
     images: [
       "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=900&q=80",
-      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=900&q=80",
+      "https://images.unsplash.com/photo-1639037687665-37e0e07fee19?w=900&q=80",
       "https://images.unsplash.com/photo-1620625515032-6ed0c1790c75?w=900&q=80"
     ],
     description: "A fully skeletonized movement hand-bevelled across 312 components. Every gear, spring, and bridge visible through double anti-reflective sapphire."
@@ -206,7 +206,7 @@ const WATCHES = [
     water: "300 meters",
     strap: "Aged Brown Leather",
     images: [
-      "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=900&q=80",
+      "https://images.unsplash.com/photo-1606293459339-aaa4dd55c5cb?w=900&q=80",
       "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=900&q=80",
       "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=900&q=80"
     ],
@@ -225,8 +225,8 @@ const WATCHES = [
     strap: "Mesh Steel",
     images: [
       "https://images.unsplash.com/photo-1606189934846-a527add8a77b?w=900&q=80",
-      "https://images.unsplash.com/photo-1539874754764-5a96559165b0?w=900&q=80",
-      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=900&q=80"
+      "https://images.unsplash.com/photo-1548171245-b0852bda6a7c?w=900&q=80",
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd001?w=900&q=80"
     ],
     description: "Discreet notifications, step tracking, and sleep analysis hidden beneath a clean analog dial. Two-year battery life, 39mm dress-watch proportions."
   }
@@ -758,7 +758,7 @@ function bindDrawers() {
   $("#clearCart").addEventListener("click", clearCart);
   $("#checkoutBtn").addEventListener("click", () => {
     if (state.cart.length === 0) return;
-    toast("Checkout is a demo — your selection has been noted");
+    openCheckoutModal();
   });
 
   // Featured add-to-cart
@@ -874,3 +874,181 @@ document.addEventListener("DOMContentLoaded", () => {
   bindReveal();
   bindHeaderScroll();
 });
+
+/* =========================================================
+   CHECKOUT — Order form modal + Google Sheets submission
+   ========================================================= */
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbxNxIi3nVAzx26GhO90wMt1Gaasg8goXk5I7xvMAJfcb5TFbAQ5r3WMZdSMNvoo4pwU4g/exec";
+
+function openCheckoutModal() {
+  /* Build item summary */
+  const itemLines = state.cart.map(c => {
+    const w = WATCHES.find(w => w.id === c.id);
+    return w ? `${w.name} × ${c.qty}` : "";
+  }).filter(Boolean).join(", ");
+
+  const totalAmt = state.cart.reduce((s, c) => {
+    const w = WATCHES.find(w => w.id === c.id);
+    return s + (w ? w.price * c.qty : 0);
+  }, 0);
+
+  /* Inject checkout form into the existing product modal */
+  const panel = $("#productModalPanel");
+  panel.innerHTML = `
+    <div class="modal__inner" style="padding:32px 28px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;">
+        <h2 style="font-family:var(--serif);font-size:24px;">Complete Your Order</h2>
+        <button class="icon-btn" id="checkoutClose" style="color:var(--text-dim);">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </div>
+
+      <!-- Order summary -->
+      <div style="background:var(--surface-2,#1a1a1a);border-radius:8px;padding:14px 16px;margin-bottom:24px;font-size:13px;">
+        <div style="color:var(--text-dim,#aaa);margin-bottom:4px;letter-spacing:.1em;text-transform:uppercase;font-size:11px;">Your Selection</div>
+        <div style="color:var(--text,#f0ece4);margin-bottom:6px;">${itemLines}</div>
+        <div style="color:var(--gold,#c5a47e);font-family:var(--serif);font-size:18px;font-weight:600;">
+          PKR ${totalAmt.toLocaleString("en-PK")}
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form id="checkoutForm" novalidate>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <label class="form-label">Full Name *</label>
+            <input class="form-input" type="text" id="coName" placeholder="Ali Hassan" required />
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <label class="form-label">Phone *</label>
+            <input class="form-input" type="tel" id="coPhone" placeholder="03xx-xxxxxxx" required />
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <label class="form-label">City *</label>
+            <input class="form-input" type="text" id="coCity" placeholder="Karachi" required />
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <label class="form-label">Postal Code</label>
+            <input class="form-input" type="text" id="coPostal" placeholder="75500" />
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;grid-column:1/-1;">
+            <label class="form-label">Delivery Address *</label>
+            <input class="form-input" type="text" id="coAddress" placeholder="House #, Street, Area" required />
+          </div>
+          <div style="display:flex;flex-direction:column;gap:6px;grid-column:1/-1;">
+            <label class="form-label">Notes (optional)</label>
+            <input class="form-input" type="text" id="coNotes" placeholder="Special instructions, preferred delivery time…" />
+          </div>
+        </div>
+
+        <div style="margin-top:8px;padding:10px 14px;background:var(--gold-bg,rgba(197,164,126,.08));border-radius:6px;font-size:12px;color:var(--text-dim,#aaa);">
+          💳 Payment on delivery — our team will call to confirm within 24 hours.
+        </div>
+
+        <button type="submit" class="btn btn--primary" id="submitOrder"
+          style="width:100%;margin-top:20px;padding:14px;">
+          Place Order
+        </button>
+        <div id="checkoutMsg" style="margin-top:12px;text-align:center;font-size:13px;min-height:20px;"></div>
+      </form>
+    </div>
+  `;
+
+  /* Inline form styles */
+  if (!document.getElementById("checkoutStyles")) {
+    const style = document.createElement("style");
+    style.id = "checkoutStyles";
+    style.textContent = `
+      .form-label { font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-dim,#aaa); }
+      .form-input  { background:var(--surface-2,#1a1a1a);border:1px solid rgba(255,255,255,.1);
+                     border-radius:6px;padding:10px 14px;font-size:13px;color:var(--text,#f0ece4);
+                     outline:none;transition:border-color .2s;width:100%; }
+      .form-input:focus { border-color:var(--gold,#c5a47e); }
+      .form-input::placeholder { color:rgba(240,236,228,.3); }
+      @media(max-width:520px){
+        #checkoutForm > div { grid-template-columns:1fr !important; }
+        #checkoutForm > div > div { grid-column:1/-1 !important; }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  /* Open the modal */
+  const modal = $("#productModal");
+  modal.classList.add("is-open");
+  modal.removeAttribute("aria-hidden");
+  document.body.style.overflow = "hidden";
+
+  /* Close button */
+  $("#checkoutClose").addEventListener("click", () => {
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  });
+
+  /* Submit */
+  $("#checkoutForm").addEventListener("submit", async (ev) => {
+    ev.preventDefault();
+    await submitOrder(totalAmt, itemLines);
+  });
+}
+
+async function submitOrder(totalAmt, itemLines) {
+  const name    = $("#coName").value.trim();
+  const phone   = $("#coPhone").value.trim();
+  const city    = $("#coCity").value.trim();
+  const address = $("#coAddress").value.trim();
+  const notes   = $("#coNotes").value.trim();
+  const msg     = $("#checkoutMsg");
+  const btn     = $("#submitOrder");
+
+  if (!name || !phone || !city || !address) {
+    msg.style.color = "#e06060";
+    msg.textContent = "Please fill in all required fields.";
+    return;
+  }
+
+  btn.disabled    = true;
+  btn.textContent = "Placing order…";
+  msg.textContent = "";
+
+  const payload = {
+    name,
+    phone,
+    city,
+    address,
+    item:   itemLines,
+    qty:    state.cart.reduce((s, c) => s + c.qty, 0),
+    amount: totalAmt,
+    notes
+  };
+
+  try {
+    await fetch(SHEET_URL, {
+      method:  "POST",
+      mode:    "no-cors",          // Apps Script doesn't need preflight for POST
+      headers: { "Content-Type": "application/json" },
+      body:    JSON.stringify(payload)
+    });
+
+    /* no-cors means we can't read the response, so assume success */
+    msg.style.color = "#4caf78";
+    msg.textContent = "Order placed! We'll call you within 24 hours to confirm.";
+    btn.textContent = "Order Placed ✓";
+    clearCart();
+
+    setTimeout(() => {
+      $("#productModal").classList.remove("is-open");
+      $("#productModal").setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+      toast("Order submitted — thank you!");
+    }, 2200);
+
+  } catch (err) {
+    btn.disabled    = false;
+    btn.textContent = "Place Order";
+    msg.style.color = "#e06060";
+    msg.textContent = "Could not submit. Please call us directly.";
+    console.error(err);
+  }
+}

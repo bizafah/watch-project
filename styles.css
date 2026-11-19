@@ -1,5 +1,5 @@
 /* =========================================================
-   CHRONOS — Luxury Timepieces
+   Watch Project — Luxury Timepieces
    Premium dark/gold aesthetic · fully responsive
    ========================================================= */
 
@@ -18,9 +18,9 @@
   --text:         #f5f0e7;
   --text-dim:     rgba(245, 240, 231, 0.62);
   --text-faint:   rgba(245, 240, 231, 0.38);
-  --serif:        'Cormorant Garamond', 'Playfair Display', serif;
+  --serif:        'Playfair Display', 'Cormorant Garamond', serif;
   --cormorant:    'Cormorant Garamond', serif;
-  --sans:         'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
+  --sans:         'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --ease:         cubic-bezier(0.22, 0.61, 0.36, 1);
   --ease-soft:    cubic-bezier(0.4, 0, 0.2, 1);
   --container:    1320px;
@@ -34,11 +34,8 @@ body {
   font-family: var(--sans);
   background: var(--black);
   color: var(--text);
-  line-height: 1.75;
-  font-weight: 300;
-  letter-spacing: 0.01em;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
@@ -100,10 +97,9 @@ input, select { font-family: inherit; color: inherit; }
 .nav { display: flex; align-items: center; gap: 28px; }
 .nav--right { justify-content: flex-end; }
 .nav__link {
-  font-size: 12px;
-  letter-spacing: 0.22em;
+  font-size: 13px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  font-weight: 300;
   color: var(--text-dim);
   position: relative;
   padding: 6px 0;
@@ -122,23 +118,36 @@ input, select { font-family: inherit; color: inherit; }
 
 .logo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  gap: 10px;
   line-height: 1;
 }
+.logo__img {
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid rgba(197,164,126,0.3);
+  flex-shrink: 0;
+}
+.logo__words {
+  display: flex;
+  flex-direction: column;
+}
 .logo__text {
-  font-family: var(--cormorant);
-  font-size: 26px;
-  font-weight: 500;
-  letter-spacing: 0.42em;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   color: var(--text);
-  padding-left: 0.42em;
 }
 .logo__sub {
-  font-size: 9px;
-  letter-spacing: 0.34em;
+  font-size: 8px;
+  letter-spacing: 0.28em;
   color: var(--gold);
-  margin-top: 4px;
+  margin-top: 3px;
+  text-transform: uppercase;
 }
 
 .icon-btn {
@@ -199,9 +208,8 @@ input, select { font-family: inherit; color: inherit; }
   background: transparent;
   border: none;
   outline: none;
-  font-size: 24px;
-  font-family: var(--cormorant);
-  font-weight: 400;
+  font-size: 22px;
+  font-family: var(--serif);
   color: var(--text);
 }
 .search-panel input::placeholder { color: var(--text-faint); font-style: italic; }
@@ -257,10 +265,9 @@ input, select { font-family: inherit; color: inherit; }
   border-bottom: 1px solid var(--line);
 }
 .drawer__title {
-  font-family: var(--cormorant);
-  font-size: 22px;
-  letter-spacing: 0.02em;
-  font-weight: 500;
+  font-family: var(--serif);
+  font-size: 18px;
+  letter-spacing: 0.04em;
 }
 .drawer__nav { display: flex; flex-direction: column; padding: 12px 0; }
 .drawer__link {
@@ -328,16 +335,16 @@ input, select { font-family: inherit; color: inherit; }
   margin-bottom: 28px;
 }
 .hero__title {
-  font-family: var(--cormorant);
-  font-size: clamp(52px, 9vw, 108px);
-  font-weight: 500;
-  line-height: 1.05;
-  letter-spacing: 0.005em;
+  font-family: var(--serif);
+  font-size: clamp(48px, 8vw, 96px);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.01em;
   margin-bottom: 24px;
 }
 .hero__title em {
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--gold-bright);
   position: relative;
 }
@@ -346,18 +353,16 @@ input, select { font-family: inherit; color: inherit; }
   color: var(--text-dim);
   max-width: 540px;
   margin-bottom: 40px;
-  line-height: 1.85;
-  font-weight: 300;
+  line-height: 1.7;
 }
 .hero__cta { display: flex; gap: 16px; margin-bottom: 80px; flex-wrap: wrap; }
 .hero__stats { display: flex; gap: 60px; }
 .hero__stat { display: flex; flex-direction: column; }
 .hero__stat .num {
-  font-family: var(--cormorant);
-  font-size: 42px;
+  font-family: var(--serif);
+  font-size: 38px;
   color: var(--gold-bright);
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  font-weight: 600;
 }
 .hero__stat .lbl {
   font-size: 11px;
@@ -404,10 +409,10 @@ input, select { font-family: inherit; color: inherit; }
   justify-content: center;
   gap: 10px;
   padding: 16px 32px;
-  font-size: 11px;
-  letter-spacing: 0.24em;
+  font-size: 12px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
   border-radius: 2px;
   transition: all 0.3s var(--ease-soft);
   cursor: pointer;
@@ -486,20 +491,18 @@ input, select { font-family: inherit; color: inherit; }
 .eyebrow--light { color: var(--text); }
 .eyebrow--light::before, .eyebrow--light::after { background: var(--text); }
 .section-title {
-  font-family: var(--cormorant);
-  font-size: clamp(36px, 5.5vw, 58px);
-  font-weight: 500;
-  letter-spacing: 0.005em;
+  font-family: var(--serif);
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 600;
+  letter-spacing: -0.01em;
   line-height: 1.1;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 .section-lead {
   color: var(--text-dim);
   font-size: 16px;
   max-width: 540px;
   margin: 0 auto;
-  line-height: 1.8;
-  font-weight: 300;
 }
 .section-head--light .section-title { color: var(--cream); }
 
@@ -548,17 +551,16 @@ input, select { font-family: inherit; color: inherit; }
   margin-bottom: 8px;
 }
 .collection-card__body h3 {
-  font-family: var(--cormorant);
-  font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 10px;
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 .collection-card__body p {
   font-size: 13px;
   color: var(--text-dim);
   margin-bottom: 16px;
-  line-height: 1.75;
-  font-weight: 300;
+  line-height: 1.6;
 }
 .collection-card__link {
   font-size: 12px;
@@ -605,18 +607,17 @@ input, select { font-family: inherit; color: inherit; }
   border-radius: 2px;
 }
 .featured__title {
-  font-family: var(--cormorant);
-  font-size: clamp(38px, 5.5vw, 60px);
-  font-weight: 500;
+  font-family: var(--serif);
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 600;
   margin: 16px 0 24px;
-  line-height: 1.08;
+  line-height: 1.05;
 }
 .featured__desc {
   color: var(--text-dim);
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.8;
   margin-bottom: 32px;
-  font-weight: 300;
 }
 .featured__specs {
   list-style: none;
@@ -629,10 +630,9 @@ input, select { font-family: inherit; color: inherit; }
   padding: 14px 0;
   border-bottom: 1px solid var(--line);
   font-size: 14px;
-  font-weight: 300;
 }
 .featured__specs span { color: var(--text-dim); letter-spacing: 0.06em; }
-.featured__specs b { font-weight: 400; color: var(--text); }
+.featured__specs b { font-weight: 500; color: var(--text); }
 .featured__foot {
   display: flex;
   align-items: center;
@@ -648,11 +648,10 @@ input, select { font-family: inherit; color: inherit; }
   margin-bottom: 6px;
 }
 .featured__price-value {
-  font-family: var(--cormorant);
-  font-size: 34px;
+  font-family: var(--serif);
+  font-size: 30px;
   color: var(--gold-bright);
-  font-weight: 500;
-  letter-spacing: 0.01em;
+  font-weight: 600;
 }
 
 /* ---------- Watches grid ---------- */
@@ -786,16 +785,15 @@ input, select { font-family: inherit; color: inherit; }
 .watch-card__body { padding: 22px 20px; flex: 1; display: flex; flex-direction: column; }
 .watch-card__brand {
   font-size: 10px;
-  letter-spacing: 0.24em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 8px;
-  font-weight: 400;
+  margin-bottom: 6px;
 }
 .watch-card__name {
-  font-family: var(--cormorant);
-  font-size: 22px;
-  font-weight: 500;
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
   margin-bottom: 8px;
   line-height: 1.2;
 }
@@ -803,7 +801,6 @@ input, select { font-family: inherit; color: inherit; }
   font-size: 12px;
   color: var(--text-dim);
   margin-bottom: 16px;
-  font-weight: 300;
 }
 .watch-card__foot {
   margin-top: auto;
@@ -813,11 +810,10 @@ input, select { font-family: inherit; color: inherit; }
   gap: 12px;
 }
 .watch-card__price {
-  font-family: var(--cormorant);
-  font-size: 20px;
-  font-weight: 500;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
   color: var(--gold-bright);
-  letter-spacing: 0.01em;
 }
 .watch-card__price-old {
   font-size: 12px;
@@ -827,9 +823,8 @@ input, select { font-family: inherit; color: inherit; }
 }
 .watch-card__add {
   font-size: 11px;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  font-weight: 400;
   color: var(--text);
   border-bottom: 1px solid var(--gold-deep);
   padding-bottom: 2px;
@@ -840,9 +835,8 @@ input, select { font-family: inherit; color: inherit; }
   text-align: center;
   padding: 80px 0;
   color: var(--text-dim);
-  font-family: var(--cormorant);
-  font-size: 26px;
-  font-weight: 400;
+  font-family: var(--serif);
+  font-size: 22px;
 }
 .watches__more { text-align: center; margin-top: 56px; }
 
@@ -882,26 +876,24 @@ input, select { font-family: inherit; color: inherit; }
 }
 .craft__num {
   display: block;
-  font-family: var(--cormorant);
-  font-size: 52px;
+  font-family: var(--serif);
+  font-size: 48px;
   color: var(--gold-deep);
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 16px;
   line-height: 1;
-  letter-spacing: 0.02em;
 }
 .craft__step h3 {
-  font-family: var(--cormorant);
-  font-size: 26px;
-  font-weight: 500;
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 600;
   margin-bottom: 12px;
   color: var(--cream);
 }
 .craft__step p {
   font-size: 13px;
   color: var(--text-dim);
-  line-height: 1.85;
-  font-weight: 300;
+  line-height: 1.7;
 }
 
 /* ---------- Journal ---------- */
@@ -937,9 +929,9 @@ input, select { font-family: inherit; color: inherit; }
   margin-bottom: 12px;
 }
 .journal-card__body h3 {
-  font-family: var(--cormorant);
-  font-size: 24px;
-  font-weight: 500;
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 600;
   margin-bottom: 12px;
   line-height: 1.25;
 }
@@ -947,8 +939,7 @@ input, select { font-family: inherit; color: inherit; }
   font-size: 14px;
   color: var(--text-dim);
   margin-bottom: 20px;
-  line-height: 1.75;
-  font-weight: 300;
+  line-height: 1.6;
 }
 .journal-card__link {
   font-size: 12px;
@@ -991,10 +982,9 @@ input, select { font-family: inherit; color: inherit; }
 }
 .testimonial__quote {
   font-family: var(--cormorant);
-  font-size: clamp(24px, 3.2vw, 32px);
+  font-size: clamp(22px, 3vw, 30px);
   font-style: italic;
-  font-weight: 400;
-  line-height: 1.55;
+  line-height: 1.5;
   color: var(--cream);
   margin-bottom: 32px;
   position: relative;
@@ -1068,18 +1058,16 @@ input, select { font-family: inherit; color: inherit; }
   align-items: center;
 }
 .newsletter__text h2 {
-  font-family: var(--cormorant);
-  font-size: clamp(30px, 4vw, 44px);
-  font-weight: 500;
-  line-height: 1.18;
+  font-family: var(--serif);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 600;
+  line-height: 1.2;
   margin-bottom: 16px;
 }
 .newsletter__text p {
   color: var(--text-dim);
   font-size: 15px;
   max-width: 460px;
-  line-height: 1.8;
-  font-weight: 300;
 }
 .newsletter__form {
   display: flex;
@@ -1123,14 +1111,13 @@ input, select { font-family: inherit; color: inherit; }
   gap: 48px;
   padding-bottom: 64px;
 }
-.footer__brand .logo__text { font-size: 26px; }
+.footer__brand .logo__text { font-size: 20px; }
 .footer__brand p {
   margin-top: 18px;
   color: var(--text-dim);
   font-size: 13px;
-  line-height: 1.8;
+  line-height: 1.7;
   max-width: 280px;
-  font-weight: 300;
 }
 .footer__social { display: flex; gap: 12px; margin-top: 24px; }
 .footer__social a {
@@ -1156,7 +1143,6 @@ input, select { font-family: inherit; color: inherit; }
   padding: 6px 0;
   font-size: 13px;
   color: var(--text-dim);
-  font-weight: 300;
   transition: color 0.2s, padding-left 0.2s;
 }
 .footer__col a:hover { color: var(--gold-bright); padding-left: 6px; }
@@ -1185,11 +1171,10 @@ input, select { font-family: inherit; color: inherit; }
 }
 .cart__empty svg { color: var(--gold-deep); margin-bottom: 20px; }
 .cart__empty p {
-  font-family: var(--cormorant);
-  font-size: 22px;
+  font-family: var(--serif);
+  font-size: 18px;
   color: var(--text);
   margin-bottom: 8px;
-  font-weight: 500;
 }
 .cart__empty span { font-size: 13px; color: var(--text-faint); }
 
@@ -1209,9 +1194,9 @@ input, select { font-family: inherit; color: inherit; }
   border: 1px solid var(--line);
 }
 .cart-item__name {
-  font-family: var(--cormorant);
-  font-size: 17px;
-  font-weight: 500;
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 600;
   line-height: 1.3;
   margin-bottom: 4px;
 }
@@ -1248,10 +1233,10 @@ input, select { font-family: inherit; color: inherit; }
   gap: 8px;
 }
 .cart-item__price {
-  font-family: var(--cormorant);
-  font-size: 18px;
+  font-family: var(--serif);
+  font-size: 16px;
   color: var(--gold-bright);
-  font-weight: 500;
+  font-weight: 600;
 }
 .cart-item__remove {
   font-size: 11px;
@@ -1278,10 +1263,10 @@ input, select { font-family: inherit; color: inherit; }
 .cart__row--total {
   padding-top: 16px;
   border-top: 1px solid var(--line);
-  font-family: var(--cormorant);
-  font-size: 22px;
+  font-family: var(--serif);
+  font-size: 20px;
   color: var(--gold-bright);
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 8px;
 }
 .cart__row--total span:first-child {
@@ -1376,18 +1361,17 @@ input, select { font-family: inherit; color: inherit; }
   margin-bottom: 8px;
 }
 .modal__name {
-  font-family: var(--cormorant);
-  font-size: 38px;
-  font-weight: 500;
+  font-family: var(--serif);
+  font-size: 34px;
+  font-weight: 600;
   line-height: 1.1;
   margin-bottom: 16px;
 }
 .modal__desc {
   color: var(--text-dim);
   font-size: 14px;
-  line-height: 1.85;
+  line-height: 1.7;
   margin-bottom: 28px;
-  font-weight: 300;
 }
 .modal__specs {
   display: grid;
@@ -1408,7 +1392,7 @@ input, select { font-family: inherit; color: inherit; }
 .modal__spec dd {
   font-size: 14px;
   color: var(--text);
-  font-weight: 400;
+  font-weight: 500;
 }
 .modal__price {
   display: flex;
@@ -1417,11 +1401,10 @@ input, select { font-family: inherit; color: inherit; }
   margin-bottom: 24px;
 }
 .modal__price-now {
-  font-family: var(--cormorant);
-  font-size: 36px;
+  font-family: var(--serif);
+  font-size: 32px;
   color: var(--gold-bright);
-  font-weight: 500;
-  letter-spacing: 0.01em;
+  font-weight: 600;
 }
 .modal__price-old {
   font-size: 16px;
